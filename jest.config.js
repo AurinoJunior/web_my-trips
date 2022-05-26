@@ -1,8 +1,7 @@
 module.exports = {
   testEnvironment: 'jsdom',
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts(x)'],
+  collectCoverageFrom: ['src/components/**/*.ts(x)'],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
-  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
-  transformIgnorePatterns: ['node_modules/(?!react-leaflet)/']
+  testPathIgnorePatterns: ['/node_modules/', '/.next/']
 }
